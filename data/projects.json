@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Prevalence of Anxiety Among Adolescents (Ilala District)",
+    "category": "Mental Health Research",
+    "description": "A cross-sectional study assessing anxiety levels and associated factors (biological, psychological, social) among 210 adolescents aged 10-15 in Ilala. Utilized GAD-7 and Rosenberg Self-Esteem tools.",
+    "thumbnail": "images/nuru-cover.png",
+    "projectImages": [
+      "images/prevalance/1.jpg",
+      "images/prevalance/2.jpg",
+      "images/prevalance/3.jpg",
+      "images/prevalance/4.jpg",
+      "images/prevalance/5.jpg",
+      "images/prevalance/6.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Postnatal Perception of PPIUCD Use",
+    "category": "Reproductive Health",
+    "description": "Quantitative study at Mnazi Mmoja Hospital assessing awareness and barriers to Postpartum Intrauterine Contraceptive Devices among 152 postnatal women. Highlighted partner support as a key factor.",
+    "thumbnail": "images/alex-cover.png",
+    "projectImages": [
+      "images/postnatal/1.png",
+      "images/postnatal/2.png",
+      "images/postnatal/3.png",
+      "images/postnatal/4.png"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Midwifery Students' Clinical Transition Experience",
+    "category": "Medical Education",
+    "description": "Qualitative study exploring the challenges undergraduate midwifery students face when transitioning from classroom theory to clinical practice at MUHAS. Identifies key barriers like supervision and resources.",
+    "thumbnail": "images/tanisa-cover.png",
+    "projectImages": [
+      "images/midwifery/1.jpg",
+      "images/midwifery/2.jpg",
+      "images/midwifery/3.jpg",
+      "images/midwifery/4.jpg",
+      "images/midwifery/5.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Parent-Adolescent SRH Communication (Kinondoni)",
+    "category": "Public Health",
+    "description": "Descriptive cross-sectional study on the prevalence of communication regarding Sexual and Reproductive Health (SRH) between parents and adolescents. Analyzed socio-cultural barriers and communication gaps.",
+    "thumbnail": "images/amina-cover.png",
+    "projectImages": [
+      "images/parent/1.jpg",
+      "images/parent/2.jpg",
+      "images/parent/3.jpg",
+      "images/parent/4.jpg",
+      "images/parent/5.jpg"
+    ]
+  }
+]

@@ -1,0 +1,262 @@
+/* --- VARIABLES --- */
+:root {
+    --primary-blue: #002244; /* Deep Academic Blue */
+    --accent-teal: #008080;   /* Medical Teal */
+    --teal-dark: #006666;
+    --text-dark: #333;
+    --whatsapp-green: #25D366;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 76px; /* Prevents content from hiding behind sticky header */
+}
+
+/* --- STICKY NAVIGATION --- */
+.navbar {
+    background-color: var(--primary-blue);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.brand-slogan {
+    font-size: 0.75rem;
+    color: var(--accent-teal);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.85) !important;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Nav Hover Effect (Underline Animation) */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 0;
+    background-color: var(--accent-teal);
+    transition: width 0.3s;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.btn-teal {
+    background-color: var(--accent-teal);
+    color: white;
+    border-radius: 50px; /* Pill shape */
+    padding: 8px 25px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-teal:hover {
+    background-color: var(--teal-dark);
+    transform: translateY(-2px); /* Slight lift on hover */
+    color: white;
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    background: linear-gradient(rgba(0, 34, 68, 0.85), rgba(0, 34, 68, 0.85)), url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 85vh; /* 85% of screen height */
+    position: relative;
+    margin-top: -76px; /* Pulls hero up behind nav */
+    padding-top: 76px;
+}
+
+.btn-whatsapp {
+    background-color: var(--whatsapp-green);
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: transform 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebc57;
+    transform: scale(1.05); /* Grow effect */
+    color: white;
+}
+
+/* --- ANIMATIONS & TRANSITIONS --- */
+
+/* Fade In Up Animation */
+.animate-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card Hover Transformations */
+.founder-card, .stat-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.founder-card:hover {
+    transform: translateY(-10px); /* Lifts up */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.stat-card {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.bg-teal {
+    background-color: var(--accent-teal) !important;
+}
+.text-teal {
+    color: var(--accent-teal) !important;
+}
+
+/* --- MOBILE SPECIFICS --- */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: var(--primary-blue);
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+    }
+    .hero-section {
+        height: auto;
+        padding: 150px 0 100px 0;
+    }
+}
+
+/* --- FOUNDER IMAGE FIX (ADDED) --- */
+.founder-img-wrapper {
+    width: 150px;       /* Fixed Width */
+    height: 150px;      /* Fixed Height */
+    margin: 0 auto;     /* Centers the image */
+    overflow: hidden;   /* Hides anything sticking out */
+    border-radius: 50%; /* Makes it a perfect circle */
+    border: 3px solid var(--accent-teal);
+    background-color: #eee;
+}
+
+.founder-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the circle without stretching */
+    object-position: top; /* Focuses on the face/top of image */
+}
+
+/* --- SOCIAL ICONS & LOGO --- */
+.navbar-brand img {
+    height: 50px;       /* Controls logo size */
+    width: auto;        /* Maintains aspect ratio */
+    object-fit: contain;
+}
+
+.social-icon {
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px); /* Lifts up slightly on hover */
+    color: var(--accent-teal) !important; /* Changes to your brand teal color */
+}
+
+/* Ensure footer spacing on mobile */
+footer .mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+/* --- ACCESSIBLE SCROLL REVEALS (existing Tafiti99 palette retained) --- */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 650ms ease, transform 650ms cubic-bezier(0.2, 0.7, 0.2, 1);
+    will-change: opacity, transform;
+}
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.navbar.navbar-scrolled {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* --- BOOK FEATURE --- */
+.book-promo-section { background: #f8f9fa; }
+.book-promo {
+    color: #fff;
+    background: linear-gradient(125deg, var(--primary-blue), var(--teal-dark) 100%);
+    border: 1px solid rgba(0, 128, 128, 0.35);
+    border-radius: 18px;
+    box-shadow: 0 18px 42px rgba(0, 34, 68, 0.16);
+    overflow: hidden;
+}
+.book-kicker { color: #fff; letter-spacing: 0.12em; font-size: 0.78rem; }
+.book-promo-image {
+    display: block;
+    width: min(100%, 340px);
+    max-height: 520px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 10px 14px 28px rgba(0, 0, 0, 0.28);
+}
+
+.book-note { color: rgba(255,255,255,0.78); }
+.book-claim-btn { color: var(--primary-blue); border-color: #fff; font-weight: 700; }
+.book-claim-btn:hover { background: var(--teal-dark); color: #fff; border-color: var(--teal-dark); transform: translateY(-2px); }
+.story-quote { background: #f8f9fa; border-left: 4px solid var(--accent-teal); }
+.site-footer { border-top: 3px solid var(--accent-teal); }
+.site-footer .social-icon { padding: 0.3rem; }
+.site-footer .social-icon:focus-visible,
+.site-footer a:focus-visible,
+.book-promo a:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within { scroll-behavior: auto; }
+    .reveal-on-scroll,
+    .animate-up,
+    .founder-card,
+    .stat-card,
+    .social-icon,
+    .btn,
+    .service-card,
+    .project-card {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+    }
+    .reveal-on-scroll { opacity: 1 !important; }
+}
+
+@media (max-width: 575.98px) {
+    .book-promo-image { width: min(100%, 300px); max-height: 440px; }
+}

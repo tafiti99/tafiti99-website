@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Tafiti99: Start local preview",
+      "type": "shell",
+      "command": "py",
+      "args": ["-m", "http.server", "5500", "--bind", "127.0.0.1"],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": false
+      }
+    }
+  ]
+}

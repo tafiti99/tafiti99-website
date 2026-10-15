@@ -1,0 +1,52 @@
+[
+  {
+    "id": "spss-guide",
+    "title": "Mastering SPSS: The Ultimate Data Cleaning Guide",
+    "category": "Data Analysis",
+    "date": "Nov 20, 2024",
+    "author": "Sadick A. Tunda",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    "summary": "Don't run regressions on dirty data. Learn the 5-step protocol to clean your dataset before analysis.",
+    "file": "content/spss-guide.md"
+  },
+  {
+    "id": "defense-tips",
+    "title": "How to Survive Your Thesis Defense",
+    "category": "Defense Preparation",
+    "date": "Nov 15, 2024",
+    "author": "Laurent Chandi",
+    "image": "https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    "summary": "Secrets from the panelists: How to handle difficult questions and structure your slides for success.",
+    "file": "content/defense-tips.md"
+  },
+  {
+    "id": "concept-note",
+    "title": "From Vague Idea to Approved Concept Note",
+    "category": "Concept Development",
+    "date": "Dec 01, 2024",
+    "author": "Sadick A. Tunda",
+    "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    "summary": "A 4-step formula to pass the 'So What?' test and get your research topic approved on the first try.",
+    "file": "content/concept-note-guide.md"
+  },
+  {
+    "id": "lit-review",
+    "title": "Literature Review: Stop Reading, Start Writing",
+    "category": "Academic Writing",
+    "date": "Dec 05, 2024",
+    "author": "Laurent Chandi",
+    "image": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    "summary": "Don't just list authors. Learn the 'Funnel Method' to synthesize evidence and find the research gap.",
+    "file": "content/lit-review-hacks.md"
+  },
+  {
+    "id": "qualitative-basics",
+    "title": "Qualitative Research: Beyond 'Talking to People'",
+    "category": "Methodology",
+    "date": "Dec 10, 2024",
+    "author": "Sadick A. Tunda",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    "summary": "Understanding Saturation, Coding, and Trustworthiness. Why qualitative analysis is harder than you think.",
+    "file": "content/qualitative-basics.md"
+  }
+]

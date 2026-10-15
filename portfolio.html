@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="View our library of successful research projects in Public Health, Mental Health, and Midwifery. See examples of high-quality academic writing and analysis.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed Projects | Tafiti99</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* --- SECURITY CSS --- */
+        
+        /* 1. Disable Text Selection */
+        body.protected-mode {
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10 and IE 11 */
+            user-select: none; /* Standard syntax */
+        }
+
+        /* 2. Hide everything when printing */
+        @media print {
+            body { 
+                display: none !important; 
+            }
+            html::after {
+                content: "Printing is disabled for security reasons - Tafiti99";
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        /* 3. Watermark Overlay */
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 4rem;
+            color: rgba(0,0,0,0.1);
+            font-weight: bold;
+            pointer-events: none; /* Lets clicks pass through */
+            z-index: 10;
+            white-space: nowrap;
+        }
+
+        /* Portfolio Styling */
+        .project-card {
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Modal Images */
+        .secure-image-container {
+            position: relative;
+            background: #eee;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+        /* Transparent shield to prevent drag-and-drop */
+        .img-shield {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 20;
+        }
+    </style>
+</head>
+<body class="protected-mode">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Tafiti99 Logo" class="me-2">
+                <div class="brand-text">
+                    <span class="fw-bold fs-4">TAFITI99</span>
+                    <span class="brand-slogan d-block">Ubora na Uharaka</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Knowledge Hub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Our Story &amp; Founder</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="contact.html" class="btn btn-teal">Book Consultation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-dark text-white pt-5 pb-5 mt-5">
+        <div class="container text-center pt-5">
+            <h1 class="display-4 fw-bold">Our Project Portfolio</h1>
+            <p class="lead">Examples of precision and academic rigour.</p>
+            <small class="text-warning"><i class="fas fa-lock"></i> Documents are view-only to protect intellectual property.</small>
+        </div>
+    </header>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4" id="portfolio-container">
+                <div class="text-center py-5">
+                    <div class="spinner-border text-teal" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalTitle">Project Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-light" id="modalBody">
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Viewer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer class="site-footer bg-black text-white py-4 text-center mt-auto">
+    <div class="container">
+        <div class="footer-social d-flex align-items-center justify-content-center flex-wrap gap-4 mb-3" aria-label="Tafiti99 social links">
+            <a href="https://www.facebook.com/share/1F8XJ6ycZE/" target="_blank" rel="noopener noreferrer" class="text-white social-icon" aria-label="Tafiti99 on Facebook">
+                <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/tafiti99" target="_blank" rel="noopener noreferrer" class="text-white social-icon" aria-label="Tafiti99 on GitHub">
+                <i class="fab fa-github fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tafiti99" target="_blank" rel="noopener noreferrer" class="text-white social-icon" aria-label="Tafiti99 on LinkedIn">
+                <i class="fab fa-linkedin-in fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/tafiti99_research?exln=NGs1Y2ZhNXgwMmJi" target="_blank" rel="noopener noreferrer" class="text-white social-icon" aria-label="Tafiti99 on Instagram">
+                <i class="fab fa-instagram fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="https://tiktok.com/@tafiti99_research" target="_blank" rel="noopener noreferrer" class="text-white social-icon" aria-label="Tafiti99 on TikTok">
+                <i class="fab fa-tiktok fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sadicktunda99%40gmail.com" target="_blank" rel="noopener noreferrer" class="text-white social-icon" aria-label="Email Tafiti99 using Gmail">
+                <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+            </a>
+        </div>
+        <small>&copy; <span class="current-year">2026</span> Tafiti99. All rights reserved.</small>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
